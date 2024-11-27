@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZZ2 Brasil</title>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <header>
+    <nav id="inicio" class="bg-[#ffce00] border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-[#ffce00]">
+      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+        <a href="https://zzdois.com.br/" class="flex items-center">
+          <img src="assets/images/logo-transparente-site.webp" class="mr-3 h-6 sm:h-9" alt="zz2 Logo" />
+        </a>
+        <div class="flex items-center lg:order-2">
+          <a href="#"
+            class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
+            Entrar
+          </a>
+          <button data-collapse-toggle="mobile-menu-2" type="button"
+            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="mobile-menu-2" aria-expanded="false">
+            <span class="sr-only">Abrir menu principal</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+          <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+            <li>
+              <a href="#inicio"
+                class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                aria-current="page">
+                Início
+              </a>
+            </li>
+            <li>
+              <a href="#sobre"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                Sobre nós
+              </a>
+            </li>
+            <li>
+              <a href="#contato"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                Contato
+              </a>
+            </li>
+            <li>
+              <a href="#contatos-recebidos"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                Contatos recebidos
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div id="default-carousel" class="relative w-full" data-carousel="slide" data-carousel-interval="6000">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden md:h-[450px]">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/images/zz2-banner.png"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets/images/zz2-info-banner.png"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+          data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+          data-carousel-slide-to="1"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button"
+        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 1 1 5l4 4" />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button"
+        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 9 4-4-4-4" />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+  </section>
+
+  <section id="sobre" class="bg-white dark:bg-gray-900">
+    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+      <img class="w-full"
+        src="assets/images/15-anos.jpg"  alt="dashboard image">
+      <div class="mt-4 md:mt-0">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+          15 anos de inovação.
+        </h2>
+        <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+          A ZZ2 é uma empresa com uma história de 15 anos no mercado, destacando-se como pioneira no Brasil no
+          desenvolvimento de soluções automotivas inovadoras. Com foco dedicado à qualidade, possui engenharia e
+          fabricação próprias, garantindo produtos de alto padrão.
+          <br><br>
+          A entrada no mercado dos Estados Unidos em 2019 foi um marco significativo para a ZZ2, elevando-a ao status de
+          referência no segmento. Mas a expansão internacional foi além, e a empresa agora também conquista mercados na
+          Europa , desenvolvendo e fornecendo soluções automotivas que oferecem segurança, entretenimento, tecnologia e
+          comodidade.
+          <br><br>
+          Além da qualidade, a empresa preza por uma assistência técnica humanizada, proporcionando confiança e
+          tranquilidade tanto para lojistas quanto para clientes finais. A garantia associada aos produtos reforça o
+          compromisso da ZZ2 em assegurar a satisfação e a durabilidade de seus produtos.
+          <br><br>
+          O sucesso da ZZ2 é impulsionado pelo empenho e dedicação de uma equipe de colaboradores engajados, que
+          compartilham a visão de oferecer o melhor atendimento aos clientes.
+          <br><br>
+          Ao olhar para o futuro, a ZZ2 reafirma seu compromisso em oferecer soluções automotivas inovadoras,
+          mantendo-se na vanguarda do mercado e proporcionando experiências excepcionais.
+        </p>
+        <a href="https://zzdois.com.br/products/"
+          class="inline-flex items-center text-gray-900 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 hover:text-[#ffce00]">
+          Acesse nossa loja!
+          <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="parceiros" class=" bg-gray-900 dark:bg-white">
+    <img src="assets/images/zz1-footer-banner.jpg" class="w-full" alt="">
+  </section>
+
+  <section id="contato" class="bg-white dark:bg-gray-900">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+        Entre em contato
+      </h2>
+      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+        Em caso de dúvidas entre em contato conosco que em breve retornaremos.
+      </p>
+      <form id="contactForm" class="space-y-8" novalidate>
+        <div>
+          <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            Nome
+          </label>
+          <input type="text" id="name"
+            class="peer block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+            placeholder="Seu nome..." required>
+          <small id="nameError" class="hidden mt-2 text-sm text-red-600">
+            O campo Nome é obrigatório.
+          </small>
+        </div>
+        <div>
+          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            E-mail
+          </label>
+          <input type="email" id="email"
+            class="peer block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+            placeholder="ex: nome@seudominio.com.br" required>
+          <small id="emailError" class="hidden mt-2 text-sm text-red-600">
+            Insira um e-mail válido.
+          </small>
+        </div>
+        <div>
+          <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            Telefone
+          </label>
+          <input type="tel" id="phone"
+            class="peer block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+            placeholder="XX-XXXXX-XXXX" required>
+          <small id="phoneError" class="hidden mt-2 text-sm text-red-600">
+            O formato deve ser XX-XXXXX-XXXX.
+          </small>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
+            Mensagem
+          </label>
+          <textarea id="message" rows="6"
+            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            placeholder="Mensagem..." required></textarea>
+          <small id="messageError" class="hidden mt-2 text-sm text-red-600">
+            O campo Mensagem é obrigatório.
+          </small>
+        </div>
+        <button type="submit"
+          class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-[#ffce00] sm:w-fit hover:bg-gray-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-400 dark:bg-[#ffce00] dark:hover:bg-gray-800 dark:focus:ring-gray-700">
+          Enviar
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+  <footer class="p-4 bg-gray-800 md:p-8 lg:p-10 dark:bg-white">
+    <div class="mx-auto max-w-screen-xl text-center">
+      <a href="#" class="flex justify-center items-center text-2xl font-semibold text-white dark:text-gray-900">
+        <img src="assets/images/logo-transparente-site.webp" class="mr-3 min-h-20 sm:h-9" alt="zz2 Logo" />
+      </a>
+      <p class="my-6 text-gray-400 dark:text-gray-500">
+        A ZZ2 é uma empresa com uma história de 15 anos no mercado, destacando-se como pioneira no Brasil no
+        desenvolvimento de soluções automotivas inovadoras. Com foco dedicado à qualidade, possui engenharia e
+        fabricação próprias, garantindo produtos de alto padrão.
+      </p>
+      <ul class="flex flex-wrap justify-center items-center mb-6 text-white dark:text-gray-900">
+        <li>
+          <a href="#inicio" class="mr-4 hover:underline md:mr-6 hover:text-[#ffce00]">Início</a>
+        </li>
+        <li>
+          <a href="#sobre" class="mr-4 hover:underline md:mr-6 hover:text-[#ffce00]">Sobre</a>
+        </li>
+        <li>
+          <a href="#contato" class="mr-4 hover:underline md:mr-6 hover:text-[#ffce00]">Contato</a>
+        </li>
+        <li>
+          <a href="#contatos-recebidos" class="mr-4 hover:underline md:mr-6 hover:text-[#ffce00]">Contatos recebidos</a>
+        </li>
+      </ul>
+      <span class="text-sm text-gray-400 sm:text-center dark:text-gray-500">
+        © 2024 <a href="#" class="hover:underline hover:text-[#ffce00]">ZZ2 Brasil</a>. Todos direitos reservados
+      </span>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

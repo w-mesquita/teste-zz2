@@ -1,0 +1,13 @@
+# Ignora node_modules de ambos os projetos
+/APP-BACKEND/node_modules
+/APP-FRONTEND/node_modules
+
+# Ignora arquivos de log
+*.log
+
+# Ignora os arquivos de build (gerados automaticamente)
+/APP-FRONTEND/dist
+
+# Ignora arquivos temporários do sistema
+.DS_Store
+Thumbs.db
