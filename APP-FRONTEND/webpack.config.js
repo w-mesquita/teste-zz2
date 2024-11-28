@@ -10,7 +10,10 @@ dotenv.config();
 
 module.exports = {
   mode: "production",
-  entry: "./src/assets/js/main.js",
+  entry: {
+    main: "./src/assets/js/main.js",
+    submissions: "./src/assets/js/submissions.js",
+  },
   output: {
     filename: "assets/js/[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"), 
@@ -36,18 +39,24 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(), 
     new MiniCssExtractPlugin({
-      filename: "assets/css/styles.[contenthash].css",
+      filename: "assets/css/styles.[contenthash].css", 
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       filename: "index.html",
+      chunks: ["main"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/submissions.html",
+      filename: "pages/submissions.html", 
+      chunks: ["submissions"],
     }),
     new CopyPlugin({
       patterns: [
         {
-          from: "src/assets/images",
+          from: "src/assets/images", 
           to: "assets/images",
         },
       ],
