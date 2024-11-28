@@ -11,3 +11,7 @@
 # Ignora arquivos temporários do sistema
 .DS_Store
 Thumbs.db
+
+# Ignora arquivos .env de ambos os projetos
+/APP-BACKEND/.env
+/APP-FRONTEND/.env

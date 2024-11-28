@@ -9,7 +9,7 @@ router.post('/submit-form', (req, res) => {
     return res.status(400).json({ message: 'Nome, email e mensagem são obrigatórios.' });
   }
 
-  const query = 'INSERT INTO contact_forms (name, email, phone, message) VALUES (?, ?, ?, ?)';
+  const query = 'INSERT INTO form_submissions (name, email, phone, message) VALUES (?, ?, ?, ?)';
 
   db.execute(query, [name, email, phone, message], (err, result) => {
     if (err) {
@@ -22,7 +22,7 @@ router.post('/submit-form', (req, res) => {
 });
 
 router.get('/form-entries', (req, res) => {
-  const query = 'SELECT * FROM contact_forms';
+  const query = 'SELECT * FROM form_submissions';
 
   db.execute(query, (err, result) => {
     if (err) {

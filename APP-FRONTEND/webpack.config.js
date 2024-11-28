@@ -1,8 +1,12 @@
+const webpack = require('webpack');
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 module.exports = {
   mode: "production",
@@ -47,6 +51,9 @@ module.exports = {
           to: "assets/images",
         },
       ],
+    }),
+    new webpack.DefinePlugin({
+      'process.env.APP_API_URL': JSON.stringify(process.env.APP_API_URL || 'http://localhost:3000/api'),
     }),
   ],
   optimization: {

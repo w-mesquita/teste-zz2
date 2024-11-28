@@ -1,8 +1,8 @@
 -- criando o banco de dados
-CREATE DATABASE formdb;
+CREATE DATABASE contact_form_db;
 
 -- selecionando o banco de dados
-USE formdb;
+USE contact_form_db;
 
 -- criando a tabela para armazenar os dados do formulário
 CREATE TABLE form_submissions (

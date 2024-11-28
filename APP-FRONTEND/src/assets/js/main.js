@@ -49,8 +49,8 @@ form.addEventListener("submit", (event) => {
   });
 
   if (isValid) {
-
-    fetch("http://localhost:3000/api/submit-form", {
+    const apiUrl = process.env.APP_API_URL || "http://localhost:3000/api";
+    fetch(`${apiUrl}/submit-form`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
