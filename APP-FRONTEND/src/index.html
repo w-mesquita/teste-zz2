@@ -75,22 +75,20 @@
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img src="assets/images/zz2-banner.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img src="assets/images/zz2-info-banner.png"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
       </div>
-      <!-- Slider indicators -->
       <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
         <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
           data-carousel-slide-to="0"></button>
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
           data-carousel-slide-to="1"></button>
       </div>
-      <!-- Slider controls -->
       <button type="button"
         class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev>
@@ -161,10 +159,14 @@
     </div>
   </section>
 
-  <section id="parceiros" class=" bg-gray-900 dark:bg-white">
-    <img src="assets/images/zz1-footer-banner.jpg" class="w-full" alt="">
-  </section>
-
+  <section id="footer-banner" class="relative bg-gray-900 dark:bg-white h-48 md:h-96">
+    <img src="assets/images/zz2-footer-banner-mobile.jpg" alt="Footer Banner" 
+         class="absolute inset-0 w-full h-full object-cover block md:hidden" />
+  
+    <img src="assets/images/zz2-footer-banner.jpg" alt="Footer Banner" 
+         class="absolute inset-0 w-full h-full object-cover hidden md:block" />
+  </section> 
+  
   <section id="contato" class="bg-white dark:bg-gray-900">
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
