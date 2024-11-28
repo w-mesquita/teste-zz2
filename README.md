@@ -8,3 +8,5 @@ e o front está hospedado em https://teste-zz2-1.onrender.com.
 desenvolvido usando responsividade e com foco no padrão dark.
 
 o script do banco de dados está em BDQUERY.sql na raiz do projeto backend.
+
+o banco de dados foi hospedado em um servidor hostgator para testar a aplicação.
